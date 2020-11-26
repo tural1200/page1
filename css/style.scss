@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Castoro', serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    .container {
+        width: 80%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .heading {
+            width: 8rem;
+            height: 100px;
+            h2 {
+                font-weight: 200;
+                letter-spacing: 1px;
+            }
+        }
+
+        .photo {
+          background-image: url(/img/theo-rql-a4pyoiTdSqI-unsplash.jpg);
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .box {
+                width: 45%;
+                height: 400px;
+                
+    
+            }
+
+            .box1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1 {
+                    font-size: 40px;
+                    width: 17rem;
+                    
+                }
+            }
+
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+        }
+
+        .footer {
+            width: 100%;
+            height: 100px;
+            border-top: 1px solid black;
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .container {
+            .content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                    height: 20rem;
+                    
+        
+                }
+    
+                .box1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h1 {
+                        font-size: 40px;
+                        width: 17rem;
+                        
+                    }
+                }
+    
+                .box2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        .container {
+            .content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                    height: 20rem;
+                    
+        
+                }
+    
+                .box1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 150px;
+                    h1 {
+                        font-size: 30px;
+                        width: 17rem;
+                        
+                        
+                    }
+                }
+    
+                .box2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 80px;
+                    
+                }
+            }
+        }
+    }
+}
+
